@@ -1,6 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
+function ENCENDIDO() {
     //alert("led on");
     console.log("led on");
     //document.getElementById("sensor").innerHTML="led on";
@@ -9,7 +9,7 @@ function LED1_On() {
     client.send(message);
  
 }
-function LED1_Off(){   
+function APAGADO(){   
     //alert("led off");
     console.log("led off");
     //document.getElementById("sensor").innerHTML="led off";
