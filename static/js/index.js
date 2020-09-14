@@ -2,24 +2,24 @@
 
 function Encender1() {
     message =new Paho.MQTT.Message("L1O");
-    message.destinationName = "mdpilatuna.fie@unach.edu.ec/repaso";
+    message.destinationName = "mdpilatuna.fie@unach.edu.ec/test";
     client.send(message);
  
 }
 function Apagar1(){   
     message =new Paho.MQTT.Message("L1N");
-    message.destinationName = "mdpilatuna.fie@unach.edu.ec/repaso";
+    message.destinationName = "mdpilatuna.fie@unach.edu.ec/test";
     client.send(message);
 }
 function Encender2() {
     message =new Paho.MQTT.Message("L2O");
-    message.destinationName = "mdpilatuna.fie@unach.edu.ec/repaso";
+    message.destinationName = "mdpilatuna.fie@unach.edu.ec/test";
     client.send(message);
  
 }
 function Apagar2(){   
     message =new Paho.MQTT.Message("L2N");
-    message.destinationName = "mdpilatuna.fie@unach.edu.ec/repaso";
+    message.destinationName = "mdpilatuna.fie@unach.edu.ec/test";
     client.send(message);
 }
 
@@ -44,9 +44,9 @@ function Apagar2(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("mdpilatuna.fie@unach.edu.ec/test");
+    client.subscribe("mdpilatuna.fie@unach.edu.ec/repaso");
     message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "mdpilatuna.fie@unach.edu.ec/repaso";
+    message.destinationName = "mdpilatuna.fie@unach.edu.ec/test";
     client.send(message);
 	
   }
