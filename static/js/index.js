@@ -1,7 +1,7 @@
 //https://www.eclipse.org/paho/clients/js/
 
 function Encender1() {
-    message =new Paho.MQTT.Message("ON1");
+    message =new Paho.MQTT.Message("ActivadoUno");
     message.destinationName = "mdpilatuna.fie@unach.edu.ec/test";
     client.send(message);
  
