@@ -65,14 +65,14 @@ function Apagar2(){
 
   // called when a message arrives
   function onMessageArrived(message) {
-	  text=(message.payloadString);
+	  texto=(message.payloadString);
 	  text=(message.payloadString).split("")[0];
 	  console.log(text)
 	  if (text=="Luz1"){
-	  document.getElementById("estado1").innerHTML=text;
+	  document.getElementById("estado1").innerHTML=texto;
 	  }
 	  else if (text=="Luz2"){
-	document.getElementById("estado2").innerHTML=text;
+	document.getElementById("estado2").innerHTML=texto;
 	  }
   }
   
