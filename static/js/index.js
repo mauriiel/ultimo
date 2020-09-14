@@ -68,7 +68,7 @@ function Apagar2(){
 	  texto=(message.payloadString);
 	  text=(message.payloadString).split("")[0];
 	  console.log(text)
-	  if (text=="LUZ1"){
+	  if (text=="Luz1"){
 	  document.getElementById("estado1").innerHTML=texto;
 	  }
 	  else if (text=="Luz2"){
